@@ -7,12 +7,17 @@
 //
 
 #include <iostream>
+#include "ANMatrix.h"
+#include "ANBitFlag.h"
 
-int main(int argc, const char * argv[])
-{
+using namespace std;
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main(int argc, const char * argv[]) {
+    const ANBitFlag flags[] = {1, 1, 1, 0, 0, 1, 1, 0, 0};
+    ANMatrix<ANBitFlag> matrix(flags, 3, 3);
+    std::cout << "Inverse of matrix: " << matrix.invert().toMATLABString() << std::endl;
+    std::cout << "Identity: " << (matrix.invert() * matrix).toMATLABString() << std::endl;
+    
     return 0;
 }
 

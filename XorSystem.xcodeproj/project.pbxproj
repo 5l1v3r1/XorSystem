@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA433A24180C4E2000C96A4D /* ANDoubleWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA433A22180C4E2000C96A4D /* ANDoubleWrapper.cpp */; };
+		FA433A27180C52F600C96A4D /* ANBitFlag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA433A25180C52F600C96A4D /* ANBitFlag.cpp */; };
 		FAE944F8180BAF3400C7A1CB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAE944F7180BAF3400C7A1CB /* main.cpp */; };
 		FAE944FA180BAF3400C7A1CB /* XorSystem.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FAE944F9180BAF3400C7A1CB /* XorSystem.1 */; };
 /* End PBXBuildFile section */
@@ -25,9 +27,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA433A22180C4E2000C96A4D /* ANDoubleWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ANDoubleWrapper.cpp; sourceTree = "<group>"; };
+		FA433A23180C4E2000C96A4D /* ANDoubleWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDoubleWrapper.h; sourceTree = "<group>"; };
+		FA433A25180C52F600C96A4D /* ANBitFlag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ANBitFlag.cpp; sourceTree = "<group>"; };
+		FA433A26180C52F600C96A4D /* ANBitFlag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBitFlag.h; sourceTree = "<group>"; };
 		FAE944F4180BAF3400C7A1CB /* XorSystem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XorSystem; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE944F7180BAF3400C7A1CB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FAE944F9180BAF3400C7A1CB /* XorSystem.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = XorSystem.1; sourceTree = "<group>"; };
+		FAE94501180BAF5400C7A1CB /* ANMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMatrix.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,11 @@
 			children = (
 				FAE944F7180BAF3400C7A1CB /* main.cpp */,
 				FAE944F9180BAF3400C7A1CB /* XorSystem.1 */,
+				FAE94501180BAF5400C7A1CB /* ANMatrix.h */,
+				FA433A23180C4E2000C96A4D /* ANDoubleWrapper.h */,
+				FA433A22180C4E2000C96A4D /* ANDoubleWrapper.cpp */,
+				FA433A26180C52F600C96A4D /* ANBitFlag.h */,
+				FA433A25180C52F600C96A4D /* ANBitFlag.cpp */,
 			);
 			path = XorSystem;
 			sourceTree = "<group>";
@@ -118,6 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAE944F8180BAF3400C7A1CB /* main.cpp in Sources */,
+				FA433A24180C4E2000C96A4D /* ANDoubleWrapper.cpp in Sources */,
+				FA433A27180C52F600C96A4D /* ANBitFlag.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +239,7 @@
 				FAE944FF180BAF3400C7A1CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
