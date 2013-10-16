@@ -59,7 +59,7 @@ ANBitFlag & ANBitFlag::operator-=(const ANBitFlag & wrapper) {
 
 ANBitFlag & ANBitFlag::operator/=(const ANBitFlag & wrapper) {
     if (!wrapper.getValue()) {
-        throw new ANBitFlagDivideByZero();
+        throw ANBitFlagDivideByZero();
     }
     return *this;
 }

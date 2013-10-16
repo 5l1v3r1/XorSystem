@@ -108,7 +108,7 @@ public:
     
     virtual ANMatrix<T>& operator+=(const ANMatrix<T> & matrix) {
         if (matrix.rows != this->rows || matrix.columns != this->columns) {
-            throw new ANMatrixDimensionsMismatch();
+            throw ANMatrixDimensionsMismatch();
         }
         
         // add every entry
@@ -123,7 +123,7 @@ public:
     
     virtual ANMatrix<T>& operator-=(const ANMatrix<T> & matrix) {
         if (matrix.rows != this->rows || matrix.columns != this->columns) {
-            throw new ANMatrixDimensionsMismatch();
+            throw ANMatrixDimensionsMismatch();
         }
         
         // subtract every entry
@@ -138,7 +138,7 @@ public:
     
     virtual ANMatrix<T> & operator*=(const ANMatrix<T> & matrix) {
         if (this->columns != matrix.rows) {
-            throw new ANMatrixDimensionsMismatch;
+            throw ANMatrixDimensionsMismatch();
         }
         vector<T> destVector;
         for (int row = 0; row < this->rows; row++) {
@@ -242,7 +242,7 @@ public:
      */
     virtual ANMatrix<T> invert() const {
         if (this->rows != this->columns) {
-            throw new ANMatrixDimensionsMismatch;
+            throw ANMatrixDimensionsMismatch();
         }
         
         ANMatrix<T> mat(this->rows, this->rows);
@@ -250,7 +250,7 @@ public:
         
         this->rref(mat, rank);
         if (rank != this->rows) {
-            throw new ANMatrixSingularity();
+            throw ANMatrixSingularity();
         }
         
         return mat;
